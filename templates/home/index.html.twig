@@ -1,0 +1,38 @@
+{# templates/home/index.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #5f5f5f; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ '/Applications/MAMP/htdocs/vnlproject/vnlproject/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
+        <li>Your template at <code><a href="{{ '/Applications/MAMP/htdocs/vnlproject/vnlproject/templates/app_home/index.html.twig'|file_link(0) }}">templates/app_home/index.html.twig</a></code></li>
+    </ul>
+
+    <!-- Ajoutez votre code de slider ici -->
+    <div class="slider">
+        <div>
+            <img src="{{ asset('/assets1/img/slider/blondie.jpg') }}" alt="Slide 1">
+           <button>blondie</button>
+        </div>
+        <!-- Ajoutez d'autres diapositives selon vos besoins -->
+        <div>
+            <img src="{{ asset('/assets/img/slider/blondie1.jpg') }}" alt="Slide 1">
+            <button>blondie</button>
+        </div>
+        <div>
+            <img src="{{ asset('/assets/img/slider/blondie3.jpg') }}" alt="Slide 1">
+           <button>blondie</button>
+        </div>
+    
+{% endblock %}
+
