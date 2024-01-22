@@ -1,10 +1,9 @@
-const burgerManager = ()=>{
-    console.log("hello burger");
+const burgerManager = () => {
     const burger = document.getElementById("burger");
     const navMenu = document.getElementById("navMenu");
     const user = document.getElementById("user");
     //let displayMenu = false;
-    burger.addEventListener("click",()=>{
+    burger.addEventListener("click", () => {
         navMenu.classList.toggle("slideRight");
         navMenu.classList.toggle("slideLeft");
         user.classList.toggle("slideRight");
@@ -20,4 +19,3 @@ const burgerManager = ()=>{
         } */
     })
 }
-export { burgerManager }

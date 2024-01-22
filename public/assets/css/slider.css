@@ -1,0 +1,38 @@
+
+body {
+    color: black;
+}
+.slider-container {
+width: 400px;
+overflow: hidden;
+position: relative;
+}
+
+.slider-content {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+width: 400px;
+flex-shrink: 0;
+display: flex;
+align-content: center;
+justify-content: center;
+}
+
+#prevBtn,
+#nextBtn {
+cursor: pointer;
+margin-top: 2rem;
+transform: translateY(-50%);
+font-size: 16px;
+}
+
+#prevBtn {
+left: 10px;
+}
+
+#nextBtn {
+right: 10px;
+}

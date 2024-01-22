@@ -13,18 +13,19 @@ body {
     background-color: teal;
 }
 
-img, input {
+img,
+input {
     width: 100%;
 }
 
 h1 {
     margin: 1rem 0;
     padding: 0 1rem;
-    color: #d12d2d; /* Bordeaux */
+    color: #d12d2d;
+    /* Bordeaux */
 }
 
 header nav {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     max-width: 1440px;
@@ -36,8 +37,13 @@ header nav {
     width: 30px;
 }
 
+nav {
+    height: 10vh;
+}
+
 #navMenu,
 #user {
+    background-color: #d12d2d;
     position: absolute;
     display: flex;
     width: 100%;
@@ -47,14 +53,16 @@ header nav {
 #navMenu {
     flex-direction: column;
     top: 3.5rem;
-    background-color: #212121; /* Noir */
+    background-color: #770a0a;
+    /* Noir */
     list-style-type: none;
 }
 
 #user {
     align-items: center;
     top: 11rem;
-    background-color: rgb(9, 31, 31); /* Noir */
+    background-color: rgb(9, 31, 31);
+    /* Noir */
 }
 
 #user a,
@@ -83,14 +91,48 @@ nav i {
     position: relative;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
 .subMenu {
     position: absolute;
     top: 0rem;
     overflow: hidden;
     transition: .4s all;
-    background-color: rgb(13, 24, 24); /* Noir */
+    background-color: rgb(13, 24, 24);
+    /* Noir */
     z-index: 2;
 }
+
+/* Styles pour les boutons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    /* Ajoute des bordures arrondies */
+    border: 2px solid #3498db;
+    /* Couleur de la bordure */
+    color: #3498db;
+    /* Couleur du texte */
+    background-color: #ffffff;
+    /* Couleur de fond */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    /* Ajoute une transition fluide */
+
+    /* Style au survol du bouton */
+    &:hover {
+        background-color: #3498db;
+        color: #ffffff;
+        border-color: #ffffff;
+    }
+}
+
 
 .hideSubMenu {
     left: 5rem;
@@ -102,6 +144,11 @@ nav i {
     max-height: 500px;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 .slideRight,
 .slideLeft {
     transform: translateX(0);
@@ -109,7 +156,8 @@ nav i {
 
 .menuBtn:hover,
 #user a:hover {
-    background-color: teal#1a1a1a; /* Noir plus foncé */
+    background-color: teal;
+    /* Noir plus foncé */
     cursor: pointer;
 }
 
@@ -126,7 +174,8 @@ footer {
     align-items: center;
     max-width: 1440px;
     font-weight: 900;
-    background-color: #d12d2d; /* Bordeaux */
+    background-color: #d12d2d;
+    /* Bordeaux */
     color: #fff;
     margin: 0 auto;
     margin-top: 1rem;
@@ -136,26 +185,33 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #d12d2d; /* Bordeaux */
+    color: #d12d2d;
+    /* Bordeaux */
     font-size: 2rem;
     padding-right: 1rem;
 }
 
 #burger:hover {
     cursor: pointer;
-    color: #ff4f4f; /* Bordeaux plus clair */
+    color: #ff4f4f;
+    /* Bordeaux plus clair */
 }
 
 .spacer {
-    border: #ff4f4f .1px solid; /* Bordeaux plus clair */
+    border: #ff4f4f .1px solid;
+    /* Bordeaux plus clair */
     max-width: 1440px;
     margin: 0 auto;
-    box-shadow: 0px 1px 5px 0px rgba(255, 79, 79, 0.75); /* Bordeaux plus clair */
-    -webkit-box-shadow: 0px 1px 5px 0px rgba(255, 79, 79, 0.75); /* Bordeaux plus clair */
-    -moz-box-shadow: 0px 1px 5px 0px rgba(255, 79, 79, 0.75); /* Bordeaux plus clair */
+    box-shadow: 0px 1px 5px 0px rgba(255, 79, 79, 0.75);
+    /* Bordeaux plus clair */
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(255, 79, 79, 0.75);
+    /* Bordeaux plus clair */
+    -moz-box-shadow: 0px 1px 5px 0px rgba(255, 79, 79, 0.75);
+    /* Bordeaux plus clair */
 }
 
 @media screen and (min-width:576px) {
+
     #navMenu,
     #user {
         display: flex;

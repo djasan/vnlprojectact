@@ -1,31 +1,31 @@
 {# templates/home/index.html.twig #}
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
-
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #5f5f5f; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-
-    <!-- Ajoutez votre code de slider ici -->
-    <div class="slider">
-        <div>
-            <img src="{{ asset('/assets1/img/slider/blondie.jpg') }}" alt="Slide 1">
-           <button>blondie</button>
-        </div>
-        <!-- Ajoutez d'autres diapositives selon vos besoins -->
-        <div>
-            <img src="{{ asset('/assets1/img/slider/blondie1.jpg') }}" alt="Slide 1">
-            <button>blondie</button>
-        </div>
-        <div>
-            <img src="{{ asset('/assets1/img/slider/blondie3.jpg') }}" alt="Slide 1">
-           <button>blondie</button>
-        </div>
-    
+{% block title %}Hello HomeController!
+{% endblock %}
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{ asset('/assets/css/slider.css')}}">
 {% endblock %}
 
+{% block javascripts %}
+
+	<script src="{{ asset('/assets/js/slider.js') }}" defer></script>
+	<script src="{{ asset('/assets/js/burgermanager.js') }}" defer></script>
+
+
+{% endblock %}
+
+{% block body %}
+
+	<div class="container">
+		<div class="slider-container" id="slider-container">
+			<div class="slider-content" id="slider-content"></div>
+			<div class="flex">
+				<button id="prevBtn" class="button">Précédent</button>
+				<button id="nextBtn" class="button">Suivant</button>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
