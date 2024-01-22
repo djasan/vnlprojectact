@@ -1,6 +1,5 @@
 #slider img{
     vertical-align: bottom;
-    background-color: teal;
 }
 #slider{
     overflow: hidden;
@@ -30,7 +29,7 @@
     width: fit-content;
     padding: .5rem;
     margin-left: 1rem;
-    color: rgb(255, 255, 255);
+    color: rgb(41, 16, 16);
     font-style: italic;
     backdrop-filter: blur(5px);
 }

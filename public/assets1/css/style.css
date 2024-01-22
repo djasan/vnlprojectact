@@ -24,7 +24,7 @@ h1 {
 }
 
 header nav {
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     max-width: 1440px;
@@ -54,7 +54,7 @@ header nav {
 #user {
     align-items: center;
     top: 11rem;
-    background-color: teal; /* Noir */
+    background-color: rgb(9, 31, 31); /* Noir */
 }
 
 #user a,
@@ -88,7 +88,7 @@ nav i {
     top: 0rem;
     overflow: hidden;
     transition: .4s all;
-    background-color: teal; /* Noir */
+    background-color: rgb(13, 24, 24); /* Noir */
     z-index: 2;
 }
 
