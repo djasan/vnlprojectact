@@ -12,20 +12,16 @@
 
 	<script src="{{ asset('/assets/js/slider.js') }}" defer></script>
 	<script src="{{ asset('/assets/js/burgermanager.js') }}" defer></script>
-
+	<script src="{{ asset('/assets/js/script.js') }}" defer></script>
 
 {% endblock %}
 
 {% block body %}
 
-	<div class="container">
-		<div class="slider-container" id="slider-container">
-			<div class="slider-content" id="slider-content"></div>
-			<div class="flex">
-				<button id="prevBtn" class="button">Précédent</button>
-				<button id="nextBtn" class="button">Suivant</button>
-			</div>
-		</div>
-	</div>
+	<div id="slider-container">
+    <div id="slider-content"></div>
+    <button id="prevBtn">Précédent</button>
+    <button id="nextBtn">Suivant</button>
+  </div>
 
 {% endblock %}
