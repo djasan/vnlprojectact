@@ -14,7 +14,7 @@
     {% endblock %}
 
     {% block javascripts %}
-    <script src="{{ asset('/assets1/img/js/script.js')}}" defer></script>
+    <script src="{{ asset('/assets1/img/js/script.js')}}" type="module" defer></script>
     {% endblock %}
     
 </head>
@@ -26,13 +26,13 @@
             <ul id="navMenu" class="slideLeft"></ul>
             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                 <div id="user" class="slideLeft">
-                    <span>{{ app.user.nom }}</span>
+                    <span>{{ app.user.firstName }}</span>
                     <a href="{{ path('app_logout')}}">LogOut</a>
                 </div>
             {% else %}
                 <div id="user" class="slideLeft">
                     <a href="{{ path('app_register')}}">Register</a>
-                    <a href="{{ path('app_login')}}">LogOut</a>
+                    <a href="{{ path('app_login')}}">Login</a>
                 </div>
             {% endif %}
             <div id="burger"><i class="fa-solid fa-bars"></i></div>
