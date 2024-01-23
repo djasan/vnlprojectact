@@ -11,7 +11,7 @@ const catalogue = [
   "./assets/img/slider/DB1.jpg", "./assets/img/slider/DB2.jpg", "./assets/img/slider/DB3.jpg",
   "./assets/img/slider/HFT.jpg", "./assets/img/slider/HFT1.jpg", "./assets/img/slider/HFT2.jpg",
   "./assets/img/slider/HFT3.jpg", "./assets/img/slider/HFT4.jpg", "./assets/img/slider/JD.jpg",
-  "./assets/img/slider/JD2.jpg", "./assets/img/slider/jefferson airplane.jpg",
+  "./assets/img/slider/JD1.jpg", "./assets/img/slider/jefferson airplane.jpg",
   "./assets/img/slider/jefferson airplane1.jpg", "./assets/img/slider/jefferson airplane2.jpg",
   "./assets/img/slider/jefferson airplane3.jpg", "./assets/img/slider/JH.jpg", "./assets/img/slider/JH1.jpg",
   "./assets/img/slider/JH2.jpg", "./assets/img/slider/KB.jpg", "./assets/img/slider/KB1.jpg",
